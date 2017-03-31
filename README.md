@@ -122,13 +122,13 @@ Gives a full control of buffer, so it possible to manage case of  DTS I-Frame.DT
 - Manage PTS/DTS and Clock (by soft).
 - Will consume GPU bandwidth to convert formats.
 
-#####The Advantages of the 2nd solution:
+##### The Advantages of the 2nd solution:
 
 - Easy to implement
 - Use optimised iOS platform format conversion.
 - Works perfectly if Frames are well ordered :I-Frame -B-Frame.....
 
-#####The disadvantages:
+##### The disadvantages:
 
 - Cannot handle correctly PTS and DTS that do not have the same order.
 - No information about the current playing time-stamp.
