@@ -131,6 +131,6 @@ Gives a full control of buffer, so it possible to manage case of  DTS I-Frame.DT
 ##### The disadvantages:
 
 - Cannot handle correctly PTS and DTS that do not have the same order.
-- No information about the current playing time-stamp.
+- No precise value of playing time-stamp.
 
 >Code ref#:XMediaPlayer/XPlayer/PlayerUI/XPlayerLayer.h
