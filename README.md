@@ -31,14 +31,14 @@ Since this player had to serve (among other players on other platforms) to suppo
 
 Ok here we are, We need an ABR-Player that will do two main things:
 
-#### 1- retrieve the data to present: _*Data processing:*_
+#### 1- retrieve the data to present: _Data processing:_
 
 1. Get the content&#39;s manifest and parse it (Extract format and playlists).
 2. Manage ABR-segment cache and player buffer.
 3. Demux segment (ts format) and extract pid of interest and use the appropriate frame consumer for each data stream/pid
 4. Raise ABR metrics if available.
 
-#### 2- Present a media content: _*Media uncompression and rendering:*_
+#### 2- Present a media content: _Media uncompression and rendering:_
 
 1. Once media frames are extracted (such as H.264, AAC, AC3), the appropriate decoder and renderer are assigned to present the final media format (audio, video and text).
 2. Some cosmetic (but user convenience) controls and view are provided (buffering indicator, player time-progress bar ....).
@@ -83,7 +83,9 @@ for(PID pid in PIDs)
   Stream_Consumer= Stream_Consumer_Factory.getConsumerFor(pid.Stream_Type);
   Stream_Reader.Read(pid, Stream_Consumer);
 }
+
 ```
+
 
 
 2._Raise ABR metrics: the ABR-Selector will apply the HLS segment selection algorithm and raise the metrics about its selections:
@@ -101,6 +103,7 @@ Resolve_Next_Index(Buffer_Lenght ,PlayList)
                         {"Requested.Segment",  RequestedSegment}]);
  return Index;
 }
+
 ```
 
 
