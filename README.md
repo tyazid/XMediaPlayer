@@ -1,7 +1,7 @@
 # XMediaPlayer -- Clone --
 An iOS (Rudimentary) Player  (HLS Video ) from scratch without AVFoundation dependency :). Inspired by Exolayer (Android).
 * An iOS (ObjC++) Player app & framwork.
-* Only ABR (and SMART) with only Video rendering is currently supported.
+* Only ABR with only Video rendering is currently supported.
   
    
 1. To clone the project
@@ -21,11 +21,11 @@ Enjoy :)
 # XMediaPalyer -- Introduction --
 
 ## XMediaPalyer: an iOS ABR Player
-XMediaPalyer is an iOS ABR Player (iOS application) POC serving  to study the feasibility of implementing a player (open source or proprietary source without AVPlayer dependencies) on iOS. This version of playervsupports ABR with video H264 compressed and muxed within a &quot;.ts&quot; as HLS segment.
+XMediaPalyer is an iOS ABR Player (iOS application) POC serving  to study the feasibility of implementing a player (open source or proprietary source without AVPlayer dependencies) on iOS. This version of player supports ABR with video H264 compressed and muxed within a &quot;.ts&quot; as an HLS segment.
 
 This achievement was possible thanks to a new evolution of the AVFoundation and VideoToolBox frameworks introduced by Apple since version 8.0 of iOS. Indeed, since this SDK version it was possible to use the embedded  H.264 H/W decoder to decode avc/video format and render it in a provided surface (CALayer).
 
-Ok, well and good. However, from an open API to decode H.624 to an APB-Player.... There is a long way to go! but it is  possible.
+Ok, well and good. However, from an open API to decode H.624 to a Player.... There is a long way to go! but it is  possible.
 
 So let&#39;s define which &quot;Player&quot; we would like to have with which capabilities.
 
