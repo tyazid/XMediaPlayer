@@ -1,22 +1,5 @@
-# XMediaPlayer -- Clone --
-An iOS (Rudimentary) Player  (HLS Video ) from scratch without AVFoundation dependency :). Inspired by Exolayer (Android).
-* An iOS (ObjC++) Player app & framwork.
-* Only ABR with only Video rendering is currently supported.
-  
-   
-1. To clone the project
-  * git clone _this repo_   
 
 
-Project can simply be imported in XCode (created with version 8).
-
-That's it.
-
-Enjoy :)
-
-
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+) *It is highly recommended to test this application on physical device because it uses HW H264 decoder to decode video stream.**
-******************
 
 # XMediaPalyer -- Introduction --
 
@@ -136,3 +119,25 @@ Gives a full control of buffer, so it possible to manage case of  DTS I-Frame.DT
 - No precise value of playing time-stamp.
 
 >Code ref#:XMediaPlayer/XPlayer/PlayerUI/XPlayerLayer.h
+
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) *It is highly recommended to test this application on physical device because it uses HW H264 decoder to decode video stream.
+
+******************
+
+**# XMediaPlayer -- Clone --
+An iOS (Rudimentary) Player  (HLS Video ) from scratch without AVFoundation dependency :). Inspired by Exolayer (Android).
+* An iOS (ObjC++) Player app & framwork.
+* Only ABR with only Video rendering is currently supported.
+  
+   
+1. To clone the project
+  * git clone _this repo_   
+
+
+Project can simply be imported in XCode (created with version 8).
+
+That's it.
+
+Enjoy :)
+
+
