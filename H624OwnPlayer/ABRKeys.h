@@ -1,5 +1,5 @@
 //
-//  SvqKeys.h
+//  ABRKeys.h
 //  XMediaPlayer
 //
 //  Created by tyazid on 07/02/2017.
@@ -15,7 +15,7 @@
 
 
 
-/**  NOTIFICATION CENTER FOR SMART ABR   **/
+/**  NOTIFICATION CENTER FOR  ABR   **/
 #define SVQN_STAT_EVENT_NAME "abr.event.key"
 #define NOTIFICATION_SMARTABR_CENTER_NAME  @"XplayertNotification.smart.abr.notification"
 #endif /* ABRKeys_h */
