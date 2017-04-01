@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0B438B1E2E1A25009874F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B438A1E2E1A25009874F5 /* main.m */; };
+		1A0B438E1E2E1A25009874F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B438D1E2E1A25009874F5 /* AppDelegate.m */; };
+		1A0B43911E2E1A25009874F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B43901E2E1A25009874F5 /* ViewController.m */; };
+		1A0B43941E2E1A25009874F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B43921E2E1A25009874F5 /* Main.storyboard */; };
+		1A0B43971E2E1A25009874F5 /* H624OwnPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B43951E2E1A25009874F5 /* H624OwnPlayer.xcdatamodeld */; };
+		1A0B43991E2E1A25009874F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B43981E2E1A25009874F5 /* Assets.xcassets */; };
+		1A0B439C1E2E1A25009874F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B439A1E2E1A25009874F5 /* LaunchScreen.storyboard */; };
+		1A0B43A81E2F80DC009874F5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0B43A71E2F80DC009874F5 /* AVFoundation.framework */; };
+		1A0B43AA1E2F80E7009874F5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0B43A91E2F80E7009874F5 /* CoreMedia.framework */; };
+		1A0B43AC1E2F80F2009874F5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0B43AB1E2F80F2009874F5 /* CoreVideo.framework */; };
+		1A0B43AE1E2F80FB009874F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0B43AD1E2F80FB009874F5 /* CoreGraphics.framework */; };
+		1A249C221E5B2E19008B0BE2 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A249C211E5B2E19008B0BE2 /* PlayerView.m */; };
+		1A44FE4E1E37AACD002A589F /* H264Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A44FE4D1E37AACD002A589F /* H264Reader.m */; };
+		1A44FE521E37D58E002A589F /* ts.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A44FE501E37D58E002A589F /* ts.mm */; };
+		1A44FE581E389F7C002A589F /* XPCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A44FE571E389F7C002A589F /* XPCore.m */; };
+		1A455BFE1E3750E1001F6802 /* VToolBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A455BFD1E3750E1001F6802 /* VToolBox.m */; };
+		1A754C8E1E38C85B007188E4 /* CodecMediaRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754C8D1E38C85B007188E4 /* CodecMediaRenderer.m */; };
+		1A754C911E38CD78007188E4 /* VideoCodecMediaRendered.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754C901E38CD78007188E4 /* VideoCodecMediaRendered.m */; };
+		1A754C941E38D0C7007188E4 /* TsExtractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A754C931E38D0C7007188E4 /* TsExtractor.mm */; };
+		1A754C981E38D1AB007188E4 /* HttpDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754C971E38D1AB007188E4 /* HttpDataSource.m */; };
+		1A754C9E1E397AB0007188E4 /* XPUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754C9D1E397AB0007188E4 /* XPUtil.m */; };
+		1A754CA11E397F0C007188E4 /* MediaDataExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CA01E397F0C007188E4 /* MediaDataExtractor.m */; };
+		1A754CA41E39EF88007188E4 /* XPlayerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CA31E39EF88007188E4 /* XPlayerLayer.m */; };
+		1A754CA81E39F0ED007188E4 /* XPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CA71E39F0ED007188E4 /* XPlayer.m */; };
+		1A754CEA1E3B92F1007188E4 /* M3U8ExtXMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CD31E3B92F1007188E4 /* M3U8ExtXMedia.m */; };
+		1A754CEB1E3B92F1007188E4 /* M3U8ExtXMediaList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CD51E3B92F1007188E4 /* M3U8ExtXMediaList.m */; };
+		1A754CEC1E3B92F1007188E4 /* M3U8ExtXStreamInf.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CD71E3B92F1007188E4 /* M3U8ExtXStreamInf.m */; };
+		1A754CED1E3B92F1007188E4 /* M3U8ExtXStreamInfList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CD91E3B92F1007188E4 /* M3U8ExtXStreamInfList.m */; };
+		1A754CEE1E3B92F1007188E4 /* M3U8Kit-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A754CDA1E3B92F1007188E4 /* M3U8Kit-Info.plist */; };
+		1A754CEF1E3B92F1007188E4 /* M3U8MasterPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CDE1E3B92F1007188E4 /* M3U8MasterPlaylist.m */; };
+		1A754CF01E3B92F1007188E4 /* M3U8MediaPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CE01E3B92F1007188E4 /* M3U8MediaPlaylist.m */; };
+		1A754CF11E3B92F1007188E4 /* M3U8PlaylistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CE21E3B92F1007188E4 /* M3U8PlaylistModel.m */; };
+		1A754CF21E3B92F1007188E4 /* M3U8SegmentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CE41E3B92F1007188E4 /* M3U8SegmentInfo.m */; };
+		1A754CF31E3B92F1007188E4 /* M3U8SegmentInfoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CE61E3B92F1007188E4 /* M3U8SegmentInfoList.m */; };
+		1A754CF41E3B92F1007188E4 /* NSString+m3u8.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CE91E3B92F1007188E4 /* NSString+m3u8.m */; };
+		1A754CF71E3D7AB7007188E4 /* AbrLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CF61E3D7AB7007188E4 /* AbrLoader.m */; };
+		1A754CFE1E3D8499007188E4 /* DataSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754CFD1E3D8499007188E4 /* DataSegment.m */; };
+		1A754D051E3E9A3F007188E4 /* TrackSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754D041E3E9A3F007188E4 /* TrackSelector.m */; };
+		1A754D0A1E3EA58B007188E4 /* DefaultBandwidthMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A754D091E3EA58B007188E4 /* DefaultBandwidthMeter.m */; };
+		1A78E1A41E4DCEEC00DB832B /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A78E1A31E4DCEEC00DB832B /* SettingViewController.m */; };
+		1AC2AB051E491D7900074788 /* AbrSamplesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2AB041E491D7900074788 /* AbrSamplesListTableViewController.m */; };
+		1AD198CF1E3F365500AFFECE /* SegmentLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD198CE1E3F365500AFFECE /* SegmentLoader.m */; };
+		1AD198D61E408B4100AFFECE /* ABRStat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD198D51E408B4100AFFECE /* ABRStat.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A0B43861E2E1A25009874F5 /* XMediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0B438A1E2E1A25009874F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A0B438C1E2E1A25009874F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A0B438D1E2E1A25009874F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A0B438F1E2E1A25009874F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1A0B43901E2E1A25009874F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1A0B43931E2E1A25009874F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A0B43961E2E1A25009874F5 /* H624OwnPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = H624OwnPlayer.xcdatamodel; sourceTree = "<group>"; };
+		1A0B43981E2E1A25009874F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A0B439B1E2E1A25009874F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A0B439D1E2E1A25009874F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0B43A71E2F80DC009874F5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1A0B43A91E2F80E7009874F5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1A0B43AB1E2F80F2009874F5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		1A0B43AD1E2F80FB009874F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A249C201E5B2E19008B0BE2 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		1A249C211E5B2E19008B0BE2 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		1A44FE4C1E37AACD002A589F /* H264Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264Reader.h; sourceTree = "<group>"; };
+		1A44FE4D1E37AACD002A589F /* H264Reader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H264Reader.m; sourceTree = "<group>"; };
+		1A44FE501E37D58E002A589F /* ts.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ts.mm; sourceTree = "<group>"; };
+		1A44FE561E37E176002A589F /* ts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		1A44FE571E389F7C002A589F /* XPCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCore.m; sourceTree = "<group>"; };
+		1A455BFC1E3750E1001F6802 /* VToolBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VToolBox.h; sourceTree = "<group>"; };
+		1A455BFD1E3750E1001F6802 /* VToolBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VToolBox.m; sourceTree = "<group>"; };
+		1A455C001E37A816001F6802 /* XPCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCore.h; sourceTree = "<group>"; };
+		1A754C8C1E38C85B007188E4 /* CodecMediaRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodecMediaRenderer.h; sourceTree = "<group>"; };
+		1A754C8D1E38C85B007188E4 /* CodecMediaRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodecMediaRenderer.m; sourceTree = "<group>"; };
+		1A754C8F1E38CD78007188E4 /* VideoCodecMediaRendered.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCodecMediaRendered.h; sourceTree = "<group>"; };
+		1A754C901E38CD78007188E4 /* VideoCodecMediaRendered.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCodecMediaRendered.m; sourceTree = "<group>"; };
+		1A754C921E38D0C7007188E4 /* TsExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TsExtractor.h; sourceTree = "<group>"; };
+		1A754C931E38D0C7007188E4 /* TsExtractor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TsExtractor.mm; sourceTree = "<group>"; };
+		1A754C961E38D1AB007188E4 /* HttpDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpDataSource.h; sourceTree = "<group>"; };
+		1A754C971E38D1AB007188E4 /* HttpDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpDataSource.m; sourceTree = "<group>"; };
+		1A754C9C1E397AB0007188E4 /* XPUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPUtil.h; sourceTree = "<group>"; };
+		1A754C9D1E397AB0007188E4 /* XPUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPUtil.m; sourceTree = "<group>"; };
+		1A754C9F1E397F0C007188E4 /* MediaDataExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaDataExtractor.h; sourceTree = "<group>"; };
+		1A754CA01E397F0C007188E4 /* MediaDataExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaDataExtractor.m; sourceTree = "<group>"; };
+		1A754CA21E39EF88007188E4 /* XPlayerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPlayerLayer.h; sourceTree = "<group>"; };
+		1A754CA31E39EF88007188E4 /* XPlayerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPlayerLayer.m; sourceTree = "<group>"; };
+		1A754CA61E39F0ED007188E4 /* XPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPlayer.h; sourceTree = "<group>"; };
+		1A754CA71E39F0ED007188E4 /* XPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPlayer.m; sourceTree = "<group>"; };
+		1A754CD21E3B92F1007188E4 /* M3U8ExtXMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M3U8ExtXMedia.h; sourceTree = "<group>"; };
+		1A754CD31E3B92F1007188E4 /* M3U8ExtXMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M3U8ExtXMedia.m; sourceTree = "<group>"; };
+		1A754CD41E3B92F1007188E4 /* M3U8ExtXMediaList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M3U8ExtXMediaList.h; sourceTree = "<group>"; };
+		1A754CD51E3B92F1007188E4 /* M3U8ExtXMediaList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M3U8ExtXMediaList.m; sourceTree = "<group>"; };
+		1A754CD61E3B92F1007188E4 /* M3U8ExtXStreamInf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M3U8ExtXStreamInf.h; sourceTree = "<group>"; };
+		1A754CD71E3B92F1007188E4 /* M3U8ExtXStreamInf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M3U8ExtXStreamInf.m; sourceTree = "<group>"; };
+		1A754CD81E3B92F1007188E4 /* M3U8ExtXStreamInfList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M3U8ExtXStreamInfList.h; sourceTree = "<group>"; };
+		1A754CD91E3B92F1007188E4 /* M3U8ExtXStreamInfList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M3U8ExtXStreamInfList.m; sourceTree = "<group>"; };
+		1A754CDA1E3B92F1007188E4 /* M3U8Kit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "M3U8Kit-Info.plist"; sourceTree = "<group>"; };
+		1A754CDB1E3B92F1007188E4 /* M3U8Kit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "M3U8Kit-Prefix.pch"; sourceTree = "<group>"; };
+		1A754CDD1E3B92F1007188E4 /* M3U8MasterPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M3U8MasterPlaylist.h; sourceTree = "<group>"; };
+		1A754CDE1E3B92F1007188E4 /* M3U8MasterPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M3U8MasterPlaylist.m; sourceTree = "<group>"; };
+		1A754CDF1E3B92F1007188E4 /* M3U8MediaPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M3U8MediaPlaylist.h; sourceTree = "<group>"; };
+		1A754CE01E3B92F1007188E4 /* M3U8MediaPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M3U8MediaPlaylist.m; sourceTree = "<group>"; };
+		1A754CE11E3B92F1007188E4 /* M3U8PlaylistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M3U8PlaylistModel.h; sourceTree = "<group>"; };
+		1A754CE21E3B92F1007188E4 /* M3U8PlaylistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M3U8PlaylistModel.m; sourceTree = "<group>"; };
+		1A754CE31E3B92F1007188E4 /* M3U8SegmentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M3U8SegmentInfo.h; sourceTree = "<group>"; };
+		1A754CE41E3B92F1007188E4 /* M3U8SegmentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M3U8SegmentInfo.m; sourceTree = "<group>"; };
+		1A754CE51E3B92F1007188E4 /* M3U8SegmentInfoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M3U8SegmentInfoList.h; sourceTree = "<group>"; };
+		1A754CE61E3B92F1007188E4 /* M3U8SegmentInfoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M3U8SegmentInfoList.m; sourceTree = "<group>"; };
+		1A754CE71E3B92F1007188E4 /* M3U8TagsAndAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M3U8TagsAndAttributes.h; sourceTree = "<group>"; };
+		1A754CE81E3B92F1007188E4 /* NSString+m3u8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+m3u8.h"; sourceTree = "<group>"; };
+		1A754CE91E3B92F1007188E4 /* NSString+m3u8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+m3u8.m"; sourceTree = "<group>"; };
+		1A754CF51E3D7AB7007188E4 /* AbrLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbrLoader.h; sourceTree = "<group>"; };
+		1A754CF61E3D7AB7007188E4 /* AbrLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbrLoader.m; sourceTree = "<group>"; };
+		1A754CFC1E3D8499007188E4 /* DataSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSegment.h; sourceTree = "<group>"; };
+		1A754CFD1E3D8499007188E4 /* DataSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSegment.m; sourceTree = "<group>"; };
+		1A754D031E3E9A3F007188E4 /* TrackSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackSelector.h; sourceTree = "<group>"; };
+		1A754D041E3E9A3F007188E4 /* TrackSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackSelector.m; sourceTree = "<group>"; };
+		1A754D081E3EA58B007188E4 /* DefaultBandwidthMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultBandwidthMeter.h; sourceTree = "<group>"; };
+		1A754D091E3EA58B007188E4 /* DefaultBandwidthMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultBandwidthMeter.m; sourceTree = "<group>"; };
+		1A78E1A21E4DCEEC00DB832B /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		1A78E1A31E4DCEEC00DB832B /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		1A78E1A51E4DDEDD00DB832B /* AppSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSetting.h; sourceTree = "<group>"; };
+		1AB675EA1E343A1200FE6FBF /* HlsMediaExtractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HlsMediaExtractor.h; sourceTree = "<group>"; };
+		1AC2AB031E491D7900074788 /* AbrSamplesListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbrSamplesListTableViewController.h; sourceTree = "<group>"; };
+		1AC2AB041E491D7900074788 /* AbrSamplesListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbrSamplesListTableViewController.m; sourceTree = "<group>"; };
+		1AC2AB061E49D5F500074788 /* ABRKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABRKeys.h; sourceTree = "<group>"; };
+		1AD198CD1E3F365500AFFECE /* SegmentLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentLoader.h; sourceTree = "<group>"; };
+		1AD198CE1E3F365500AFFECE /* SegmentLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentLoader.m; sourceTree = "<group>"; };
+		1AD198D31E3FA3F600AFFECE /* M3U8Kit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M3U8Kit.h; sourceTree = "<group>"; };
+		1AD198D41E408B4100AFFECE /* ABRStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABRStat.h; sourceTree = "<group>"; };
+		1AD198D51E408B4100AFFECE /* ABRStat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABRStat.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0B43831E2E1A25009874F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0B43AE1E2F80FB009874F5 /* CoreGraphics.framework in Frameworks */,
+				1A0B43AC1E2F80F2009874F5 /* CoreVideo.framework in Frameworks */,
+				1A0B43AA1E2F80E7009874F5 /* CoreMedia.framework in Frameworks */,
+				1A0B43A81E2F80DC009874F5 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0B437D1E2E1A25009874F5 = {
+			isa = PBXGroup;
+			children = (
+				1A0B43881E2E1A25009874F5 /* XMediaPlayer */,
+				1A0B43871E2E1A25009874F5 /* Products */,
+				1A0B43A61E2F80DC009874F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A0B43871E2E1A25009874F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A0B43861E2E1A25009874F5 /* XMediaPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A0B43881E2E1A25009874F5 /* XMediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1A754CA51E39F0A2007188E4 /* XPlayer */,
+				1A0B438C1E2E1A25009874F5 /* AppDelegate.h */,
+				1A0B438D1E2E1A25009874F5 /* AppDelegate.m */,
+				1AC2AB031E491D7900074788 /* AbrSamplesListTableViewController.h */,
+				1AC2AB041E491D7900074788 /* AbrSamplesListTableViewController.m */,
+				1A78E1A51E4DDEDD00DB832B /* AppSetting.h */,
+				1A0B438F1E2E1A25009874F5 /* ViewController.h */,
+				1A78E1A21E4DCEEC00DB832B /* SettingViewController.h */,
+				1A78E1A31E4DCEEC00DB832B /* SettingViewController.m */,
+				1A0B43901E2E1A25009874F5 /* ViewController.m */,
+				1A0B43921E2E1A25009874F5 /* Main.storyboard */,
+				1A0B43981E2E1A25009874F5 /* Assets.xcassets */,
+				1A0B439A1E2E1A25009874F5 /* LaunchScreen.storyboard */,
+				1A0B439D1E2E1A25009874F5 /* Info.plist */,
+				1A0B43951E2E1A25009874F5 /* H624OwnPlayer.xcdatamodeld */,
+				1A0B43891E2E1A25009874F5 /* Supporting Files */,
+			);
+			name = XMediaPlayer;
+			path = H624OwnPlayer;
+			sourceTree = "<group>";
+		};
+		1A0B43891E2E1A25009874F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A0B438A1E2E1A25009874F5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A0B43A61E2F80DC009874F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A0B43AD1E2F80FB009874F5 /* CoreGraphics.framework */,
+				1A0B43AB1E2F80F2009874F5 /* CoreVideo.framework */,
+				1A0B43A91E2F80E7009874F5 /* CoreMedia.framework */,
+				1A0B43A71E2F80DC009874F5 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A44FE4F1E37D578002A589F /* Third_Party */ = {
+			isa = PBXGroup;
+			children = (
+				1A754CAC1E3B8C19007188E4 /* M3U8Parser */,
+				1A754CAB1E3B8BFE007188E4 /* TSDemuxer */,
+			);
+			name = Third_Party;
+			sourceTree = "<group>";
+		};
+		1A754C8B1E38C7E4007188E4 /* av */ = {
+			isa = PBXGroup;
+			children = (
+				1A455BFC1E3750E1001F6802 /* VToolBox.h */,
+				1A455BFD1E3750E1001F6802 /* VToolBox.m */,
+				1A754C8C1E38C85B007188E4 /* CodecMediaRenderer.h */,
+				1A754C8D1E38C85B007188E4 /* CodecMediaRenderer.m */,
+				1A754C8F1E38CD78007188E4 /* VideoCodecMediaRendered.h */,
+				1A754C901E38CD78007188E4 /* VideoCodecMediaRendered.m */,
+			);
+			name = av;
+			sourceTree = "<group>";
+		};
+		1A754C951E38D191007188E4 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				1A754C961E38D1AB007188E4 /* HttpDataSource.h */,
+				1A754C971E38D1AB007188E4 /* HttpDataSource.m */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		1A754CA51E39F0A2007188E4 /* XPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1A44FE4F1E37D578002A589F /* Third_Party */,
+				1AB675E71E32F3C500FE6FBF /* PlayerCore */,
+				1AB675E81E32F43100FE6FBF /* PlayerUI */,
+				1A754CA61E39F0ED007188E4 /* XPlayer.h */,
+				1A754CA71E39F0ED007188E4 /* XPlayer.m */,
+			);
+			name = XPlayer;
+			sourceTree = "<group>";
+		};
+		1A754CAB1E3B8BFE007188E4 /* TSDemuxer */ = {
+			isa = PBXGroup;
+			children = (
+				1A44FE501E37D58E002A589F /* ts.mm */,
+				1A44FE561E37E176002A589F /* ts.h */,
+			);
+			name = TSDemuxer;
+			sourceTree = "<group>";
+		};
+		1A754CAC1E3B8C19007188E4 /* M3U8Parser */ = {
+			isa = PBXGroup;
+			children = (
+				1A754CD21E3B92F1007188E4 /* M3U8ExtXMedia.h */,
+				1A754CD31E3B92F1007188E4 /* M3U8ExtXMedia.m */,
+				1A754CD41E3B92F1007188E4 /* M3U8ExtXMediaList.h */,
+				1A754CD51E3B92F1007188E4 /* M3U8ExtXMediaList.m */,
+				1A754CD61E3B92F1007188E4 /* M3U8ExtXStreamInf.h */,
+				1A754CD71E3B92F1007188E4 /* M3U8ExtXStreamInf.m */,
+				1A754CD81E3B92F1007188E4 /* M3U8ExtXStreamInfList.h */,
+				1A754CD91E3B92F1007188E4 /* M3U8ExtXStreamInfList.m */,
+				1A754CDA1E3B92F1007188E4 /* M3U8Kit-Info.plist */,
+				1A754CDB1E3B92F1007188E4 /* M3U8Kit-Prefix.pch */,
+				1A754CDD1E3B92F1007188E4 /* M3U8MasterPlaylist.h */,
+				1A754CDE1E3B92F1007188E4 /* M3U8MasterPlaylist.m */,
+				1A754CDF1E3B92F1007188E4 /* M3U8MediaPlaylist.h */,
+				1A754CE01E3B92F1007188E4 /* M3U8MediaPlaylist.m */,
+				1A754CE11E3B92F1007188E4 /* M3U8PlaylistModel.h */,
+				1A754CE21E3B92F1007188E4 /* M3U8PlaylistModel.m */,
+				1A754CE31E3B92F1007188E4 /* M3U8SegmentInfo.h */,
+				1A754CE41E3B92F1007188E4 /* M3U8SegmentInfo.m */,
+				1A754CE51E3B92F1007188E4 /* M3U8SegmentInfoList.h */,
+				1AD198D31E3FA3F600AFFECE /* M3U8Kit.h */,
+				1A754CE61E3B92F1007188E4 /* M3U8SegmentInfoList.m */,
+				1A754CE71E3B92F1007188E4 /* M3U8TagsAndAttributes.h */,
+				1A754CE81E3B92F1007188E4 /* NSString+m3u8.h */,
+				1A754CE91E3B92F1007188E4 /* NSString+m3u8.m */,
+			);
+			name = M3U8Parser;
+			sourceTree = "<group>";
+		};
+		1A754CF81E3D7FE0007188E4 /* stat */ = {
+			isa = PBXGroup;
+			children = (
+				1AD198D41E408B4100AFFECE /* ABRStat.h */,
+				1AD198D51E408B4100AFFECE /* ABRStat.m */,
+				1AC2AB061E49D5F500074788 /* ABRKeys.h */,
+			);
+			name = stat;
+			sourceTree = "<group>";
+		};
+		1AB675E71E32F3C500FE6FBF /* PlayerCore */ = {
+			isa = PBXGroup;
+			children = (
+				1A754C951E38D191007188E4 /* data */,
+				1A754C8B1E38C7E4007188E4 /* av */,
+				1AB675E91E3439E700FE6FBF /* hls */,
+				1A455C001E37A816001F6802 /* XPCore.h */,
+				1A44FE571E389F7C002A589F /* XPCore.m */,
+				1A754C9C1E397AB0007188E4 /* XPUtil.h */,
+				1A754C9D1E397AB0007188E4 /* XPUtil.m */,
+				1A754C9F1E397F0C007188E4 /* MediaDataExtractor.h */,
+				1A754CA01E397F0C007188E4 /* MediaDataExtractor.m */,
+			);
+			name = PlayerCore;
+			sourceTree = "<group>";
+		};
+		1AB675E81E32F43100FE6FBF /* PlayerUI */ = {
+			isa = PBXGroup;
+			children = (
+				1A754CA21E39EF88007188E4 /* XPlayerLayer.h */,
+				1A754CA31E39EF88007188E4 /* XPlayerLayer.m */,
+				1A249C201E5B2E19008B0BE2 /* PlayerView.h */,
+				1A249C211E5B2E19008B0BE2 /* PlayerView.m */,
+			);
+			name = PlayerUI;
+			sourceTree = "<group>";
+		};
+		1AB675E91E3439E700FE6FBF /* hls */ = {
+			isa = PBXGroup;
+			children = (
+				1A754CF81E3D7FE0007188E4 /* stat */,
+				1AD198CD1E3F365500AFFECE /* SegmentLoader.h */,
+				1AD198CE1E3F365500AFFECE /* SegmentLoader.m */,
+				1A754CFC1E3D8499007188E4 /* DataSegment.h */,
+				1A754CFD1E3D8499007188E4 /* DataSegment.m */,
+				1AB675EA1E343A1200FE6FBF /* HlsMediaExtractor.h */,
+				1A44FE4C1E37AACD002A589F /* H264Reader.h */,
+				1A44FE4D1E37AACD002A589F /* H264Reader.m */,
+				1A754C921E38D0C7007188E4 /* TsExtractor.h */,
+				1A754C931E38D0C7007188E4 /* TsExtractor.mm */,
+				1A754CF51E3D7AB7007188E4 /* AbrLoader.h */,
+				1A754CF61E3D7AB7007188E4 /* AbrLoader.m */,
+				1A754D031E3E9A3F007188E4 /* TrackSelector.h */,
+				1A754D041E3E9A3F007188E4 /* TrackSelector.m */,
+				1A754D081E3EA58B007188E4 /* DefaultBandwidthMeter.h */,
+				1A754D091E3EA58B007188E4 /* DefaultBandwidthMeter.m */,
+			);
+			name = hls;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0B43851E2E1A25009874F5 /* XMediaPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0B43A01E2E1A25009874F5 /* Build configuration list for PBXNativeTarget "XMediaPlayer" */;
+			buildPhases = (
+				1A0B43821E2E1A25009874F5 /* Sources */,
+				1A0B43831E2E1A25009874F5 /* Frameworks */,
+				1A0B43841E2E1A25009874F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMediaPlayer;
+			productName = H624OwnPlayer;
+			productReference = 1A0B43861E2E1A25009874F5 /* XMediaPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0B437E1E2E1A25009874F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = tyazid;
+				TargetAttributes = {
+					1A0B43851E2E1A25009874F5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UN88H9QU8J;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1A0B43811E2E1A25009874F5 /* Build configuration list for PBXProject "XMediaPlayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A0B437D1E2E1A25009874F5;
+			productRefGroup = 1A0B43871E2E1A25009874F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A0B43851E2E1A25009874F5 /* XMediaPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0B43841E2E1A25009874F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A754CEE1E3B92F1007188E4 /* M3U8Kit-Info.plist in Resources */,
+				1A0B439C1E2E1A25009874F5 /* LaunchScreen.storyboard in Resources */,
+				1A0B43991E2E1A25009874F5 /* Assets.xcassets in Resources */,
+				1A0B43941E2E1A25009874F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0B43821E2E1A25009874F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0B43911E2E1A25009874F5 /* ViewController.m in Sources */,
+				1AD198D61E408B4100AFFECE /* ABRStat.m in Sources */,
+				1A754C981E38D1AB007188E4 /* HttpDataSource.m in Sources */,
+				1A754CEA1E3B92F1007188E4 /* M3U8ExtXMedia.m in Sources */,
+				1A754D0A1E3EA58B007188E4 /* DefaultBandwidthMeter.m in Sources */,
+				1A754CEB1E3B92F1007188E4 /* M3U8ExtXMediaList.m in Sources */,
+				1A754C911E38CD78007188E4 /* VideoCodecMediaRendered.m in Sources */,
+				1A78E1A41E4DCEEC00DB832B /* SettingViewController.m in Sources */,
+				1A754C9E1E397AB0007188E4 /* XPUtil.m in Sources */,
+				1A0B438E1E2E1A25009874F5 /* AppDelegate.m in Sources */,
+				1A754CFE1E3D8499007188E4 /* DataSegment.m in Sources */,
+				1A754CF71E3D7AB7007188E4 /* AbrLoader.m in Sources */,
+				1A754D051E3E9A3F007188E4 /* TrackSelector.m in Sources */,
+				1A754CA81E39F0ED007188E4 /* XPlayer.m in Sources */,
+				1A754CF11E3B92F1007188E4 /* M3U8PlaylistModel.m in Sources */,
+				1A754CF01E3B92F1007188E4 /* M3U8MediaPlaylist.m in Sources */,
+				1A455BFE1E3750E1001F6802 /* VToolBox.m in Sources */,
+				1A249C221E5B2E19008B0BE2 /* PlayerView.m in Sources */,
+				1A0B438B1E2E1A25009874F5 /* main.m in Sources */,
+				1A754CED1E3B92F1007188E4 /* M3U8ExtXStreamInfList.m in Sources */,
+				1A44FE4E1E37AACD002A589F /* H264Reader.m in Sources */,
+				1A754C941E38D0C7007188E4 /* TsExtractor.mm in Sources */,
+				1AD198CF1E3F365500AFFECE /* SegmentLoader.m in Sources */,
+				1AC2AB051E491D7900074788 /* AbrSamplesListTableViewController.m in Sources */,
+				1A754CF41E3B92F1007188E4 /* NSString+m3u8.m in Sources */,
+				1A0B43971E2E1A25009874F5 /* H624OwnPlayer.xcdatamodeld in Sources */,
+				1A754CF31E3B92F1007188E4 /* M3U8SegmentInfoList.m in Sources */,
+				1A754CA41E39EF88007188E4 /* XPlayerLayer.m in Sources */,
+				1A754CA11E397F0C007188E4 /* MediaDataExtractor.m in Sources */,
+				1A754CEF1E3B92F1007188E4 /* M3U8MasterPlaylist.m in Sources */,
+				1A44FE581E389F7C002A589F /* XPCore.m in Sources */,
+				1A754CF21E3B92F1007188E4 /* M3U8SegmentInfo.m in Sources */,
+				1A754C8E1E38C85B007188E4 /* CodecMediaRenderer.m in Sources */,
+				1A754CEC1E3B92F1007188E4 /* M3U8ExtXStreamInf.m in Sources */,
+				1A44FE521E37D58E002A589F /* ts.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A0B43921E2E1A25009874F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A0B43931E2E1A25009874F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A0B439A1E2E1A25009874F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A0B439B1E2E1A25009874F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A0B439E1E2E1A25009874F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A0B439F1E2E1A25009874F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A0B43A11E2E1A25009874F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8EBXF8KSKD;
+				INFOPLIST_FILE = H624OwnPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cisco-fr.H624OwnPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1A0B43A21E2E1A25009874F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8EBXF8KSKD;
+				INFOPLIST_FILE = H624OwnPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cisco-fr.H624OwnPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0B43811E2E1A25009874F5 /* Build configuration list for PBXProject "XMediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0B439E1E2E1A25009874F5 /* Debug */,
+				1A0B439F1E2E1A25009874F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0B43A01E2E1A25009874F5 /* Build configuration list for PBXNativeTarget "XMediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0B43A11E2E1A25009874F5 /* Debug */,
+				1A0B43A21E2E1A25009874F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A0B43951E2E1A25009874F5 /* H624OwnPlayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A0B43961E2E1A25009874F5 /* H624OwnPlayer.xcdatamodel */,
+			);
+			currentVersion = 1A0B43961E2E1A25009874F5 /* H624OwnPlayer.xcdatamodel */;
+			path = H624OwnPlayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1A0B437E1E2E1A25009874F5 /* Project object */;
+}
