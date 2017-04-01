@@ -70,7 +70,7 @@ if(Buffer_Lenght &gt;= MIN_BUFFER_SIZE)continue;
 Code ref#:XMediaPlayer/XPlayer/PlayerCore/hls/[AbrLoader.h, TrackSelector.h, SegmentLoader.h]
 ```
 
-1._Demux segment:_ Sement is a part of stream described in the profile&#39;s playlist. It is formatted as ts (transport stream, see  [TS-Spec](https://fr.wikipedia.org/wiki/MPEG_Transport_Stream)) container so each media stream are transported  is elementary stream with a specific packet ID. The player core uses a third party ts demuxed ( [tsdemuxer on GitHub](https://github.com/clark15b/tsdemuxer)) which was modified to support AAC demuxing and adapted to be used with objc++. The core player framework provides a stream-reader factory that will instantiate to appropriate reader for an extracted ES packet based on this its stream type as bellow:
+1._Demux segment:_ Segment is a part of stream described in the profile&#39;s playlist. It is formatted as ts (transport stream, see  [TS-Spec](https://fr.wikipedia.org/wiki/MPEG_Transport_Stream)) container so each media stream are transported  is elementary stream with a specific packet ID. The player core uses a third party ts demuxed ( [tsdemuxer on GitHub](https://github.com/clark15b/tsdemuxer)) which was modified to support AAC demuxing and adapted to be used with objc++. The core player framework provides a stream-reader factory that will instantiate the appropriate reader for an extracted ES packet based on its stream type as bellow:
 
 
 ```
