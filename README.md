@@ -124,7 +124,8 @@ Gives a full control of buffer, so it possible to manage case of  DTS I-Frame.DT
 
 ******************
 
-**# XMediaPlayer -- Clone --
+
+# XMediaPlayer -- Clone --
 An iOS (Rudimentary) Player  (HLS Video ) from scratch without AVFoundation dependency :). Inspired by Exolayer (Android).
 * An iOS (ObjC++) Player app & framwork.
 * Only ABR with only Video rendering is currently supported.
