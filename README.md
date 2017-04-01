@@ -3,8 +3,8 @@
 
 # XMediaPalyer -- Introduction --
 
-## XMediaPalyer: an iOS ABR Player
-XMediaPalyer is an iOS ABR Player (iOS application) POC serving  to study the feasibility of implementing a player (open source or proprietary source without AVPlayer dependencies) on iOS. This version of player supports ABR with video H264 compressed and muxed within a &quot;.ts&quot; as an HLS segment.
+## XMediaPalyer: an iOS Player
+XMediaPalyer is an iOS Player (iOS application) POC serving  to study the feasibility of implementing a player (open source or proprietary source without AVPlayer dependencies) on iOS. This current version of player supports ABR-HLS type with video H264 compressed and muxed within a &quot;.ts&quot; as an HLS segment.
 
 This achievement was possible thanks to a new evolution of the AVFoundation and VideoToolBox frameworks introduced by Apple since version 8.0 of iOS. Indeed, since this SDK version it was possible to use the embedded  H.264 H/W decoder to decode avc/video format and render it in a provided surface (CALayer).
 
