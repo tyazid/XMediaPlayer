@@ -55,7 +55,7 @@
     [self unactivate];
 }
 -(void)activate{
-    REGISTER_NOTIFICATION_RECEIVER_GEN(NOTIFICATION_SMARTABR_CENTER_NAME);
+    REGISTER_NOTIFICATION_RECEIVER_GEN(NOTIFICATION_ABR_CENTER_NAME);
     
 }
 -(void)unactivate{
@@ -70,7 +70,7 @@ RECEIVE_NOTIFICATION_METHOD_IN
     NSLog(@"------------------------->>>>> STAT EVENT : %@",notification.userInfo);
 
     
-   GET_RECEIVED_NOTIFICATION_VALUE(ABRStat,SVQN_STAT_EVENT_NAME,stat);
+   GET_RECEIVED_NOTIFICATION_VALUE(ABRStat,ABR_STAT_EVENT_NAME,stat);
     NSLog(@"------------------------->>>>> STAT EVENT.DICO : %@",stat);
     if(stat){//isBuffering
  
@@ -92,8 +92,7 @@ RECEIVE_NOTIFICATION_METHOD_OUT
  
 @property DetailledStat* detailledStat;
 
-@property (nonatomic, retain) IBOutlet UISwitch *smartAbrSwitch;
-@property XPlayerLayer* playerLayer;
+ @property XPlayerLayer* playerLayer;
 @property XPlayer* player;
  //@property (strong )AbrLoader* abrLoader;
 //-(void) prepareVideoLayer;

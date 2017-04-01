@@ -34,7 +34,7 @@ NSArray*assets;
 {
     samples = [NSArray arrayWithObjects:@"BigBuckBunny",@"ARTE" ,@"Apple HLS",@"Sintel",nil];
     
-    abrSupport = [NSArray arrayWithObjects:@"Smart-HLS",@"Smart-HLS" ,@"Standard-HLS",@"Standard-HLS",nil];
+    abrSupport = [NSArray arrayWithObjects:@"Abr-HLS",@"Abr-HLS" ,@"Standard-HLS",@"Standard-HLS",nil];
 
     
     baseUrls = [NSArray arrayWithObjects:

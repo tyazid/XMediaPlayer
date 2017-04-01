@@ -246,11 +246,10 @@ andConsumer:(id<MediaConsumer>) mediaConsumer{//Meter
                           
                           nil];
     ABRStat* stat = [[ABRStat alloc] initWithDictionary:dict];
-    SEND_NOTIFICATION_MSG_GEN(NOTIFICATION_SMARTABR_CENTER_NAME,SVQN_STAT_EVENT_NAME,stat);
+    SEND_NOTIFICATION_MSG_GEN(NOTIFICATION_ABR_CENTER_NAME,ABR_STAT_EVENT_NAME,stat);
     
   
-    //SMART OUT
-    //load
+     //load
     M3U8SegmentInfo* segment = [mediaPlaylist.segmentList segmentInfoWithNumber:idx];
 #ifdef ABR_DBG
     NSLog(@">>############ ABRLOADER: LOAD IDX : %lu SEG : %@",idx, segment);

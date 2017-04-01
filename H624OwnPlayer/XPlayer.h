@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, XPlayerState) {
 @property  id<XPlayerDelegate> playerDelegate ;
 @property BOOL loopMode;
 
-@property (readonly) BOOL playing, smartAbr;
+@property (readonly) BOOL playing;
 @property (readonly) XPlayerState playbackState;
 @property BOOL stalled;
 @property (readonly) NSTimeInterval duration;

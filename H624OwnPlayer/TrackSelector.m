@@ -27,30 +27,21 @@ BOOL svqSupport;
    if(self = [super init]   )
    {
        _model = model;
-       _delta=_vqnThreshold=_bandwidthFraction=0.f;
-       _meter=meter;
+        _meter=meter;
        _length = _model&&   // check and throw if needed
        _model.masterPlaylist&&
        _model.masterPlaylist.xStreamList?  [_model.masterPlaylist.xStreamList count] : 0;
        _selectedIndex = [self determineIdealSelectedIndex:NAN];
        _q=[[XPBlockingQueue alloc] init];
     //   svqSupport =(_model && _model.svqMap && _model.svqMap.count) ? YES : NO;
-       _smartAbrMode=NO;
-   }
+    }
     return self;
   }
 
--(double)getDelta
-{
-    	return svqSupport && _smartAbrMode ?   (float)[ self delta ] : 0.f;
-}
+
 
 -(NSUInteger) playlisIndex:(M3U8ExtXStreamInf *) format{
     return   [  _model.masterPlaylist.xStreamList indexOf:format];
-}
--(BOOL) supportSmartSelection {
- 
-    return svqSupport && _smartAbrMode;
 }
 
 -(BOOL)continueLoadSegs:(NSTimeInterval)bufferedDurationSec :(BOOL)loading
@@ -140,97 +131,6 @@ BOOL svqSupport;
     
 }
 
-/*
-
--(Svqn*)findInSvqMap:(M3U8ExtXStreamInf *)format  segNumber:(NSUInteger)segmentNumber{
-
-   NSArray<Svqn*>* array =  [[self model ]svqMap][format.m3u8URL];
-    if(array)
-        for (Svqn *svqn in array)
-             if(svqn.index == segmentNumber)
-                 return svqn;
-     return Nil;
- }
- 
--(BOOL)setSmartSelectedChunkIndex:(NSUInteger)segmentIndex{
-    
-    M3U8ExtXStreamInf* requestedformat =[self selectedFormat];
-    if(requestedformat){
-        Svqn* requestedSvqn = [self findInSvqMap:requestedformat segNumber:segmentIndex];
-        if(!requestedSvqn)
-            return NO;
-        M3U8ExtXStreamInf* bestFormat =  [_model.masterPlaylist.xStreamList xStreamInfAtIndex: [self determineMaxBitrateIndex]];
-        Svqn* topSvqn= [self findInSvqMap:bestFormat segNumber:segmentIndex];
-        M3U8ExtXStreamInf* format;
-        NSInteger choosedFormatIdx = -1;
-        float lastDelta=0.f;
-        float delta = [self smartAbrMode]?(float)[self getDelta] : 0.f;
-        Svqn*  appliedSvqn = requestedSvqn;
-        if(delta>0.f)
-        {
-            Svqn* fndi=Nil;
-            float delta_i = 0.f;
-            for (int i = 0; i < _length; i++) {
-                format =  [_model.masterPlaylist.xStreamList xStreamInfAtIndex: i];
-                if( format == requestedformat ) {
-                    if(choosedFormatIdx == -1)
-                        choosedFormatIdx = i;
-                    continue;
-                }
-                fndi=[self findInSvqMap:format segNumber:requestedSvqn.segment.number];
-                if(fndi &&  fndi.note>=[self vqnThreshold] &&fndi.segment.startTime == requestedSvqn.segment.startTime)
-                {
-                    delta_i = requestedSvqn.note - fndi.note;
-                    if((fndi.note < requestedSvqn.note) &&
-                       (delta_i <= delta) &&
-                       (lastDelta ==0 || lastDelta<=delta_i))
-                    {
-                        appliedSvqn = fndi;
-                        choosedFormatIdx=i;
-                        lastDelta = delta_i;
-                    }
-                }
-            }
-        }
-        M3U8ExtXStreamInf* appliedFormat=Nil;
-        if(choosedFormatIdx == -1){
-            choosedFormatIdx = _selectedIndex;
-            appliedFormat    = [self selectedFormat];
-            appliedSvqn      = requestedSvqn;
-        }else {
-        appliedFormat = [_model.masterPlaylist.xStreamList xStreamInfAtIndex:choosedFormatIdx];
-        }
-
-        
-        if(_smartAbrMode){
-      NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys:
-                              [NSString stringWithFormat:@"%lf",[topSvqn note]],MXNOTEKEY,
-                              [NSString stringWithFormat:@"%lf",[requestedSvqn note]],RQNOTEKEY,
-                              [NSString stringWithFormat:@"%lf",[appliedSvqn note]],APPNOTEKEY,
-                              [NSString stringWithFormat:@"%lu",[bestFormat bandwidth]],MXBITRATE,
-                              [NSString stringWithFormat:@"%lu",[requestedformat bandwidth]],RQBITRATE,
-                              [NSString stringWithFormat:@"%lu",[appliedFormat bandwidth]],APPBITRATE,
-                              [NSString stringWithFormat:@"%lu",[_meter getBitrateEstimate]],ESTBITRATE,
-                              nil];
-             ABRStat* stat = [[ABRStat alloc] initWithDictionary:dict];
-             SEND_NOTIFICATION_MSG_GEN(NOTIFICATION_SMARTABR_CENTER_NAME,SVQN_STAT_EVENT_NAME,stat);
-        }
-        
-        //SEND_NOTIFICATION_MSG_GEN(NAME,K,V)
-        
-        
- 
-     //   ABRStat* stat = [[ABRStat alloc] initWithDictionary:dict];
-        
-        
-       //  [NSString stringWithFormat:@""];
- 
-
-    }
-
-    return NO;
-}
-*/
 -(ABRStat *)peekStat{
     return [[self q] peek];
 }
@@ -266,12 +166,5 @@ BOOL svqSupport;
     return NSUIntegerMax;
 }
 @end
-/*
- -(NSUInteger) determineIdealSelectedIndex:(double) nowSec;
-  -(BOOL)supportSmartSelection;
- -(void)setSvqDeltaNote:(float)delta;
- -(BOOL)setSmartSelectedChunkIndex:(NSUInteger)segmentIndex;
- -(ABRStat*)peekStat;
- -(ABRStat*)pullStat;
- */
+ 
 

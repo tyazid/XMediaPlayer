@@ -8,15 +8,6 @@
 
 #ifndef SvqKeys_h
 #define SvqKeys_h
-/** KEY USED TO CONFIGURE XPLAYER SMART-ABR FEATURE (using Xplayer#setExtraConfiguration)
- Exp:
- [[self player] setExtraConfiguration:
- [NSDictionary dictionaryWithObjectsAndKeys:
- [NSNumber numberWithBool:YES],SVQAN_SMART_AVTIVATE_KEY,
- [NSNumber numberWithFloat:8.0f], SVQAN_NOTE_THRESHOLD_KEY,
- [NSNumber numberWithFloat:0.3f],SVQAN_DELTA_NOTE_KEY,
- nil]] ;
- **/
 
 
 //FLOAT FRAC 0]..1]
@@ -24,7 +15,6 @@
 
 
 
-/**  NOTIFICATION CENTER FOR SMART ABR   **/
-#define SVQN_STAT_EVENT_NAME "abr.event.key"
-#define NOTIFICATION_SMARTABR_CENTER_NAME  @"XplayertNotification.smart.abr.notification"
+ #define ABR_STAT_EVENT_NAME "abr.event.key"
+#define NOTIFICATION_ABR_CENTER_NAME  @"XplayertNotification.abr.notification"
 #endif /* SvqKeys_h */

@@ -444,11 +444,8 @@ RECEIVE_NOTIFICATION_METHOD_OUT
 
                     }
                       NSLog(@">> DATA MODEL OK , Player duration:%lf",_duration);
-                  //  _smartAbr = [model svqMap] && [[model svqMap] count]? YES:NO;
-                   // NSLog(@">> SvQ MAP : %s",_smartAbr? "OK" : "KO");
                     
-                  //  NSLog(@">> SvQ MAP : %@", [model svqMap]  );
-                    
+                     
                     DefaultBandwidthMeter  * meter = [[DefaultBandwidthMeter alloc] init];
                     //[player setLoopMode:YES];
                     abrLoader= [[AbrLoader alloc] initWith:model andPlayer:self bandwidthMeter:meter andConsumer:Nil];
