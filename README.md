@@ -15,7 +15,7 @@ That's it.
 Enjoy :)
 
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+) *It is highly recommended to test this application on physical device because it uses HW H264 to decode video stream.**
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) *It is highly recommended to test this application on physical device because it uses HW H264 decoder to decode video stream.**
 ******************
 
 # XMediaPalyer -- Introduction --
